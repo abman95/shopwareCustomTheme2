@@ -1,5 +1,5 @@
-![1Shopware Theme Installing Guide 1](https://github.com/abman95/shopwareCustomTheme2/assets/132164884/4f0cd7ef-21e9-47e9-a661-00b5a61d6401)
 ![2Shopware Theme Installing Guide 2](https://github.com/abman95/shopwareCustomTheme2/assets/132164884/831ee14a-484c-4f8b-8d82-d9c7fa5ecbf8)
+![1Shopware Theme Installing Guide 1](https://github.com/abman95/shopwareCustomTheme2/assets/132164884/4f0cd7ef-21e9-47e9-a661-00b5a61d6401)
 
 # Installation Instructions for Shopware Theme
 
