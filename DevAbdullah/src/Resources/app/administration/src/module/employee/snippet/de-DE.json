@@ -1,0 +1,20 @@
+{
+    "employee-module": {
+        "elements": {
+            "webeface-employeepicture-name-jobtitle": {
+                "label": "Mitarbeiter"
+            }
+        },
+        "general": {
+            "mainMenuItemGeneral": "Mitarbeiter",
+            "descriptionTextModule": "Mitarbeiter hier bearbeiten"
+        }
+    },
+    "sw-cms": {
+        "elements": {
+            "webeface-employeepicture-name-jobtitle": {
+                "label": "Mitarbeiterbild"
+            }
+        }
+    }
+}

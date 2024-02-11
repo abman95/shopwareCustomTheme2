@@ -1,0 +1,36 @@
+{% block faq_module_index %}
+    <sw-page class="faq-module-index">
+        <template slot="content">
+            
+            <div class="faqContainer">
+                <h1>Edit FAQs here!</h1>
+                <sw-select-field
+                    :options="mainProductsOptions"
+                    v-model="selectedProductId"
+                    label="Select Product">
+                </sw-select-field>
+
+                <sw-text-field
+                    label="Question"
+                    v-model="question">
+                </sw-text-field>
+
+                <sw-text-field
+                    label="Answer"
+                    v-model="answer">
+                </sw-text-field>
+
+                <sw-button @click="saveFAQ">Save FAQ</sw-button>
+                <div v-if="successMessage" class="alert alert-success">{{ successMessage }}</div>
+                <div v-if="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+            
+                <div id="displayUnansweredFAQContainer">
+                    <h1>Unanswered FAQ questions</h1>
+                    <div id="displayUnansweredFAQ"></div>
+                </div>
+                <sw-button @click="resetFAQ">FAQ RESET</sw-button>
+            </div>
+            
+        </template>
+    </sw-page>
+{% endblock %}

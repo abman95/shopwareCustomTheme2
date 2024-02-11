@@ -1,0 +1,15 @@
+{
+    "faq-module": {
+        "general": {
+            "mainMenuItemGeneral": "Product FAQ",
+            "descriptionTextModule": "Manage Products FAQ's here"
+        }
+    },
+    "sw-cms": {
+        "elements": {
+            "webeface-employeepicture-name-jobtitle": {
+                "label": "Employee picture with name and job title"
+            }
+        }
+    }
+}

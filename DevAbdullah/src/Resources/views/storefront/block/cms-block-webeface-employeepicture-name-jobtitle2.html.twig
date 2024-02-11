@@ -1,0 +1,22 @@
+{# {% sw_extends '@Storefront/storefront/block/cms-block-image-text.html.twig' %}
+
+{% block block_image_text %}
+<div class="sw-cms-block-employeepicture-name-jobtitle">
+    {% for block in page.cmsPage.sections.first.blocks %}
+        {% for slot in block.slots %}
+            {% if slot.type == 'image' or slot.type == 'text' %}
+                {% set employee = slot.translated.customFields %}
+                {{ dump() }}
+                <div class="employee-container">
+                    <div class="employee-content" style="background-image: url('{{ employee.backgroundImageSrc }}');">
+                        <img src="{{ employee.profileImageSrc }}" alt="Mitarbeiterbild" class="employee-picture">
+                        <h1 class="employee-jobtitle">{{ employee.position }}</h1>
+                        <p class="employee-name">{{ employee.name }}</p>
+                    </div>
+                    <hr class="employee-divider"/>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</div>
+{% endblock %} #}

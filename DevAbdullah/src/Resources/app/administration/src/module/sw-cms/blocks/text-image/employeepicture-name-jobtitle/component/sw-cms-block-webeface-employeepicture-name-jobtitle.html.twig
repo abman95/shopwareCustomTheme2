@@ -1,0 +1,25 @@
+{# <plugin root>/src/Resources/app/administration/src/module/sw-cms/blocks/text-image/my-image-text-reversed/component/sw-cms-block-webeface-employeepicture-name-jobtitle.html.twig #}
+{% block sw_cms_block_webeface_employeepicture_name_jobtitle %}
+    <div class="sw-cms-block-employeepicture-name-jobtitle">
+        <div class="row">
+            <div class="col-3">
+
+                <slot name="employeepicture" class="image">
+                {% block sw_cms_block_webeface_employeepicture_name_jobtitle_slot_employeepicture %}
+                {% endblock %}
+                </slot>
+
+                <slot name="name" class="text">>
+                {% block sw_cms_block_webeface_employeepicture_name_jobtitle_slot_name %}
+                {% endblock %}
+                </slot>
+
+                <slot name="jobtitle" class="text">>
+                {% block sw_cms_block_webeface_employeepicture_name_jobtitle_slot_jobtitle %}
+                {% endblock %}
+                </slot>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

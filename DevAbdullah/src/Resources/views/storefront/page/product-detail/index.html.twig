@@ -1,0 +1,16 @@
+{% sw_extends '@Storefront/storefront/page/product-detail/index.html.twig' %}
+
+    {% block page_product_detail_tabs %}
+        <div class="product-detail-tabs">
+            {% sw_include '@Storefront/storefront/page/product-detail/tabs.html.twig' %}
+        </div>
+        <div>
+            <hr>
+            <h1 id="product-detail-page-faq-header">{{ "detail.productFAQHeader"|trans|sw_sanitize }}</h1>
+            <input type="text" id="faqQuestionInput" placeholder="{{ "detail.productFAQQuestionInputPlaceholder"|trans|sw_sanitize }}">
+            <br>
+            <button id="faqQuestionSubmit">{{ "detail.productFAQQuestionSubmit"|trans|sw_sanitize }}</button>
+            <p id="faqQuestionSubmitStatus"></p>
+            <div id="answeredFAQs"></div>
+        </div>
+    {% endblock %}

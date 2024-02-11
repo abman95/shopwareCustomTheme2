@@ -1,0 +1,15 @@
+{
+    "faq-module": {
+        "general": {
+            "mainMenuItemGeneral": "Produkt FAQ",
+            "descriptionTextModule": "Bearbeite Produkt FAQs hier"
+        }
+    },
+    "sw-cms": {
+        "elements": {
+            "webeface-employeepicture-name-jobtitle": {
+                "label": "Mitarbeiterbild mit Namen und Berufsbezeichnung"
+            }
+        }
+    }
+}

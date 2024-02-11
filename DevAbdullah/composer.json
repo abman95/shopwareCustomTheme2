@@ -1,0 +1,19 @@
+{
+  "name": "swag/theme-skeleton",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.2",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "DevAbdullah\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "DevAbdullah\\DevAbdullah",
+    "label": {
+      "de-DE": "Theme DevAbdullah plugin",
+      "en-GB": "Theme DevAbdullah plugin"
+    }
+  }
+}

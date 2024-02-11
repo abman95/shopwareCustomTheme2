@@ -1,0 +1,14 @@
+{# <plugin root>/src/Resources/app/administration/src/module/sw-cms/blocks/text-image/my-image-text-reversed/component/sw-cms-block-webeface-employeepicture-name-jobtitle.html.twig #}
+
+{% block sw_cms_block_webeface_employeepicture_name_jobtitle %}
+<div class="sw-cms-block-employeepicture-name-jobtitle">
+    <div class="employee-container" v-for="employee in employees" :key="employee.id">
+        <div class="employee-content" :style="'background-image: url(' + employee.backgroundImageSrc + ');'">
+            <img :src="employee.profileImageSrc" alt="Employee Image" class="employee-picture">
+            <div class="employee-jobtitle"><h1>{{ employee.position }}</h1></div>
+            <div class="employee-name"><p>{{ employee.htmlText }}</p></div>
+        </div>
+        <hr class="employee-divider"/>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{# Path: <plugin root>/Resources/views/storefront/block/cms-block-webeface-employeepicture-name-jobtitle.html.twig #}
+{% sw_extends '@Storefront/storefront/block/cms-block-image-text.html.twig' %}
+
+{% block block_image_text %}
+    {% set employeepicture = block.slots.getSlot('employeepicture') %}
+    {% set name = block.slots.getSlot('name') %}
+    {% set jobtitle = block.slots.getSlot('jobtitle') %}
+    
+    <div class="sw-cms-block-employeepicture-name-jobtitle">
+        <div class="row">
+            {% block block_employeepicture %}
+                <img src="{{ employeepicture.data.media.url }}" alt="{{ employeepicture.translated.alt }}" class="image">
+            {% endblock %}
+
+            {% block block_name %}
+                <h2>{{ name.data.content|raw }}</h2>
+            {% endblock %}
+
+            {% block block_jobtitle %}
+                <p>{{ jobtitle.config.content.value|raw }}</p>
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,4 @@
+employee_display:
+    path: /employee-display
+    controller: DevAbdullah\Controller\EmployeeController::displayEmployees
+    methods: GET

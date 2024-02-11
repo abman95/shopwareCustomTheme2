@@ -1,0 +1,53 @@
+{% block employee_module_index %}
+    <sw-page class="employee-module-index">
+        <template slot="content">
+            <div class="employeeModuleContainer">
+                </div>
+                <h2>Mitarbeiter erstellen</h2>
+                <sw-form @submit="saveEmployee">
+                    <sw-text-field
+                        label="Position"
+                        v-model="employeePosition"
+                        placeholder="Positionsnamen eingeben">
+                    </sw-text-field>
+
+                    <sw-media-field
+                        label="Hintergrundbild"
+                        v-model="backgroundImage"
+                        :media-items="backgroundImages">
+                    </sw-media-field>
+
+                    <sw-media-field
+                        label="Bild (Person)"
+                        v-model="employeeImage"
+                        :media-items="employeeImages">
+                    </sw-media-field>
+
+                    <sw-text-editor
+                        placeholder="Schreiben Sie hier Ihren Text"
+                        label="Text"
+                        v-model="employeeText">
+                    </sw-text-editor>
+
+                    <sw-button @click="saveEmployee">Mitarbeiter speichern</sw-button>
+                </sw-form>
+                <div v-if="successMessage" class="alert alert-success">{{ successMessage }}</div>
+                <div v-if="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+            </div>
+            <div class="employeeList">
+                <h2>Mitarbeiterliste</h2>
+                <ul class="employee-list">
+                <li v-for="employee in employees" :key="employee.id" class="employee-item">
+                    <h2 class="employeePositionHeader">{{ employee.position }}</h2>
+                    <img :src="employee.profileImageSrc" class="employeeProfileImage">
+                    <img :src="employee.backgroundImageSrc" class="employeebackgroundImage">
+                    <img :src="getMediaPath(employee.imageUrl)" style="display:none">
+                    <img :src="getMediaPath(employee.backgroundImageUrl)" style="display:none">
+                    <p class="employeeHtmlText">{{ employee.htmlText }}</p>
+                    <sw-button @click="deleteEmployee(employee.id)">Mitarbeiter löschen</sw-button>
+                </li>
+            </ul>
+            </div>
+        </template>
+    </sw-page>
+{% endblock %}

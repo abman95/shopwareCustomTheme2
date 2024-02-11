@@ -1,0 +1,29 @@
+{% sw_extends '@Storefront/storefront/layout/header/header.html.twig' %}
+
+{# 
+            {% block layout_header_logo %}
+                <div class="col-12 col-lg-auto header-logo-col">
+                    {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
+                </div>
+                        {% block base_navigation %}
+<div class="nav-main" style="width: 50%; display: flex; align-items: center;">
+                {% block base_navigation_inner %}
+                    {% sw_include '@Storefront/storefront/layout/navigation/navigation.html.twig' %}
+                                        {% block layout_header_top_bar %}
+    <div class="top-bar d-none d-lg-block">
+        <nav class="top-bar-nav">
+            {% block layout_header_top_bar_language %}
+                {% sw_include '@Storefront/storefront/layout/header/actions/language-widget.html.twig' %}
+            {% endblock %}
+
+            {% block layout_header_top_bar_currency %}
+                {% sw_include '@Storefront/storefront/layout/header/actions/currency-widget.html.twig' %}
+            {% endblock %}
+        </nav>
+    </div>
+{% endblock %}
+                {% endblock %}
+            </div>
+        {% endblock %}
+
+            {% endblock %} #}

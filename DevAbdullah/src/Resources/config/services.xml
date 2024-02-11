@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="DevAbdullah\Core\Content\EmployeeEntity\EmployeeEntityDefinition">
+            <tag name="shopware.entity.definition" entity="employee_entity"/>
+        </service>
+
+        <service id="DevAbdullah\Core\Content\EmployeeEntity\Aggregate\EmployeeTranslation\EmployeeTranslationDefinition">
+            <tag name="shopware.entity.definition" entity="employee_translation"/>
+        </service>
+
+        <service id="DevAbdullah\Controller\EmployeeController">
+            <argument type="service" id="DevAbdullah\Repository\EmployeeRepository"/>
+        </service>
+    </services>
+</container>
